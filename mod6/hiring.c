@@ -26,8 +26,8 @@ int main() {
 
     // Generate random scores for each candidate and print them out
     for (int i = 0; i < n; i++) {
-        candidates[i] = rand() % 101; // Generate a random score between 0 and 100
-        printf("Candidate %d: %d\n", i+1, candidates[i]); // Print out the candidate number and their score
+        candidates[i] = rand() % 101; // Generate a random score
+        printf("Candidate %d: %d\n", i+1, candidates[i]);
     }
 
     int best_candidate = hiring(candidates, n); // Find the index of the best candidate
